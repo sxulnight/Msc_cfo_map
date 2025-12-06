@@ -1,0 +1,105 @@
+html, body {height: 100%; margin: 0;}
+#map {height: 100vh;}
+.gradient-bar {width:120px; height:12px; margin-bottom:4px; border:1px solid #444;}
+.leaflet-attribution-flag {display: none !important;}
+h3 {text-align:center; color:white; position:absolute; z-index:9999; width:100%; pointer-events:none;}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#header {
+    background: linear-gradient(135deg, #2a4a7a 0%, #3b6a9a 100%);
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    z-index: 100;
+    position: relative;
+}
+
+#header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#main-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+    position: relative;
+}
+
+#map-container {
+    width: 65%;
+    height: 100%;
+    background-color: #252525;
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#text-container {
+    width: 35%;
+    height: 100%;
+    background-color: #2d2d2d;
+    padding: 30px;
+    overflow-y: auto;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+#text-container h2 {
+    color: #5ab0ff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#text-container p {
+    color: #d0d0d0;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#footer {
+    background: linear-gradient(135deg, #2a4a7a 0%, #3b6a9a 100%);
+    color: #b0b0b0;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.6);
+    font-size: 14px;
+    z-index: 100;
+    position: relative;
+}
+
+.legend {
+    background: white;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.legend, .legend b, .legend span {
+    color: #000 !important;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ЦФО — Рынок труда</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-choropleth/dist/choropleth.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.css" />
+    <script src="https://unpkg.com/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css" />
+    <script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
+
+    <script src="https://unpkg.com/simple-statistics@7.8.3/dist/simple-statistics.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Карта Центрального федерального округа — Рынок труда</h1>
+    </div>
+    <div id="main-container">
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+        <div id="text-container">
+            <h2>Общая информация о ЦФО</h2>
+            <p>Центральный федеральный округ (сокращённо ЦФО) входит в число восьми крупных административных единиц Российской Федерации. Он появился благодаря указу главы государства от 13 мая 2000 года. Основной административный узел — столица страны, Москва.</p>
+            <h2>География и размеры</h2>
+            <p>Общая площадь округа достигает 650 205 км², что эквивалентно около 3,8% от всей российской территории. ЦФО выделяется наибольшим числом жителей по сравнению с другими округами.</p>
+            <p>Располагается преимущественно на Восточно-Европейской равнине. В рельефе преобладают возвышенности вроде Валдайской, Смоленско-Московской и Среднерусской, а также низины такие как Мещёрская и Окско-Донская. Максимальная высота — 347 метров (это пик Валдайской возвышенности).</p>
+            <p>Соседние страны: Беларусь на западной стороне, Украина — на юго-западе. Среди российских округов: Южный на юге, Приволжский на востоке и Северо-Западный на севере.</p>
+        </div>
+    </div>
+    <div id="footer">
+        Карта подготовлена студентом [Парфенычев В.С.]<br>
+        МИИГАиК, 2025
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
